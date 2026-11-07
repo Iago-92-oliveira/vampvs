@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VampVS · Perfil</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="topo">
+      <div>
+        <h1 id="nome">...</h1>
+        <span class="faccao-selo" id="faccao"></span>
+      </div>
+      <div class="topo-direita">
+        <nav class="nav" id="nav" aria-label="Principal"></nav>
+        <button class="btn btn-ghost" id="btn-ouro-dev" type="button" hidden>+500 ouro (teste)</button>
+        <button class="btn btn-ghost" id="btn-sair" type="button">Sair</button>
+      </div>
+    </header>
+
+    <div class="grade">
+      <section class="painel" aria-labelledby="t-status">
+        <h2 id="t-status">Status</h2>
+        <dl class="dados">
+          <dt>Nível</dt><dd id="nivel"></dd>
+          <dt>Experiência</dt><dd id="xp"></dd>
+          <dt>Ouro</dt><dd id="ouro"></dd>
+          <dt>Pontos de ação</dt><dd id="pa"></dd>
+          <dt>Honra</dt><dd id="honra"></dd>
+        </dl>
+        <div class="barra" aria-hidden="true"><span id="barra-xp"></span></div>
+
+        <h2 class="topo-atributos">Atributos</h2>
+        <div id="aviso-pontos" class="aviso-pontos oculto"></div>
+        <div id="atributos"></div>
+        <div class="derivados" id="derivados"></div>
+        <div class="efeitos oculto" id="efeitos"></div>
+      </section>
+
+      <div class="coluna">
+        <section class="painel" aria-labelledby="t-inv">
+          <h2 id="t-inv">Inventário</h2>
+          <div id="inventario"></div>
+        </section>
+        <section class="painel" aria-labelledby="t-hist">
+          <h2 id="t-hist">Últimas batalhas</h2>
+          <div id="historico"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/profile.js"></script>
+</body>
+</html>

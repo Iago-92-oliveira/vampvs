@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VampVS · Esconderijo</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="topo">
+      <h1>Esconderijo</h1>
+      <div class="topo-direita">
+        <nav class="nav" id="nav" aria-label="Principal"></nav>
+      </div>
+    </header>
+
+    <section class="painel painel-mina" aria-labelledby="t-mina">
+      <h2 id="t-mina">Mina de ouro</h2>
+      <div class="resumo-vila">
+        <div>Seu ouro: <strong id="ouro"></strong></div>
+        <div>Produção: <strong id="por-hora"></strong> ouro/hora</div>
+      </div>
+      <div class="mina-linha">
+        <div class="mina-info">
+          <div>Acumulado na mina: <strong id="acumulado">0</strong> / <span id="capacidade"></span></div>
+          <div class="barra" aria-hidden="true"><span id="barra-mina"></span></div>
+          <p class="fraco" id="mina-dica"></p>
+        </div>
+        <button class="btn btn-coletar oculto" id="btn-coletar" type="button">Coletar ouro</button>
+      </div>
+    </section>
+
+    <section class="painel" aria-labelledby="t-estruturas">
+      <h2 id="t-estruturas">Construções</h2>
+      <div class="mercado-grid" id="estruturas"></div>
+    </section>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/hideout.js"></script>
+</body>
+</html>

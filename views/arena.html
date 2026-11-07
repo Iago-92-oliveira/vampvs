@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VampVS · Arena</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="topo">
+      <h1>Arena</h1>
+      <nav class="nav" id="nav" aria-label="Principal"></nav>
+    </header>
+
+    <div class="grade grade-larga">
+      <div class="coluna">
+        <section class="painel" aria-labelledby="t-alvos">
+          <h2 id="t-alvos">Desafiar a facção inimiga</h2>
+          <div class="resumo-pa">
+            <div>Pontos de ação: <strong id="pa"></strong></div>
+            <div class="fraco" id="regras"></div>
+          </div>
+          <div id="alvos"></div>
+        </section>
+
+        <section class="painel" aria-labelledby="t-relatorio">
+          <h2 id="t-relatorio">Relatório do ataque</h2>
+          <div id="relatorio"><p class="vazio">Escolha um alvo para atacar.</p></div>
+        </section>
+      </div>
+
+      <div class="coluna">
+        <section class="painel" aria-labelledby="t-rank">
+          <h2 id="t-rank">Ranking de honra</h2>
+          <div id="ranking"></div>
+        </section>
+        <section class="painel" aria-labelledby="t-hist">
+          <h2 id="t-hist">Últimas batalhas</h2>
+          <div id="historico"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/arena.js"></script>
+</body>
+</html>

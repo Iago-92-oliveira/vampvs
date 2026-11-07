@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VampVS · Entrar</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="centro">
+    <section class="cartao">
+      <div class="marca">
+        <h1>VampVS</h1>
+        <p class="fraco">A guerra entre sangue e lua começa aqui.</p>
+      </div>
+
+      <div class="abas" role="tablist">
+        <button class="btn btn-ghost" id="aba-login" role="tab" aria-selected="true" type="button">Entrar</button>
+        <button class="btn btn-ghost" id="aba-registro" role="tab" aria-selected="false" type="button">Criar conta</button>
+      </div>
+
+      <form id="form-login" autocomplete="on">
+        <label for="login-user">Usuário</label>
+        <input type="text" id="login-user" name="username" autocomplete="username" required>
+        <label for="login-senha">Senha</label>
+        <input type="password" id="login-senha" name="password" autocomplete="current-password" required>
+        <button class="btn largo" type="submit">Entrar</button>
+      </form>
+
+      <form id="form-registro" class="oculto" autocomplete="on">
+        <label for="reg-user">Usuário</label>
+        <input type="text" id="reg-user" name="username" autocomplete="username" minlength="3" maxlength="20" required>
+        <label for="reg-nome">Nome do personagem (opcional)</label>
+        <input type="text" id="reg-nome" name="nomePersonagem" maxlength="24">
+        <label for="reg-senha">Senha (mínimo 8 caracteres)</label>
+        <input type="password" id="reg-senha" name="password" autocomplete="new-password" minlength="8" maxlength="72" required>
+        <button class="btn largo" type="submit">Criar conta</button>
+      </form>
+    </section>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/login.js"></script>
+</body>
+</html>
