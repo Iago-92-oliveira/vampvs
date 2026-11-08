@@ -72,7 +72,7 @@ input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 2px 
 .btn:disabled { opacity: 0.45; cursor: not-allowed; filter: none; }
 .btn-ghost { background: transparent; color: var(--osso); border: 1px solid var(--linha); }
 .btn-ghost:hover { border-color: var(--accent); filter: none; }
-body[data-faccao="lobisomem"] .btn:not(.btn-ghost) { color: #1a1108; }
+body[data-faccao="lobisomem"] .btn:not(.btn-ghost):not(.negado) { color: #1a1108; }
 
 /* ===== Aviso (toast) ===== */
 #toast {
