@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Vampiro encapuzado">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="40%" r="75%"><stop offset="0" stop-color="#3b0d1a"/><stop offset="1" stop-color="#07030a"/></radialGradient>
+    <radialGradient id="e" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff3b5c" stop-opacity="1"/><stop offset="1" stop-color="#ff3b5c" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <path d="M128 22 C56 28 36 112 40 256 L216 256 C220 112 200 28 128 22 Z" fill="#170a12"/>
+  <path d="M128 52 C86 56 74 108 80 168 C98 192 158 192 176 168 C182 108 170 56 128 52 Z" fill="#030103"/>
+  <ellipse cx="106" cy="114" rx="26" ry="14" fill="url(#e)"/><ellipse cx="150" cy="114" rx="26" ry="14" fill="url(#e)"/>
+  <ellipse cx="106" cy="114" rx="12" ry="4.5" fill="#ff5b78"/><ellipse cx="150" cy="114" rx="12" ry="4.5" fill="#ff5b78"/>
+  <path d="M112 156 Q128 164 144 156" stroke="#5c0d1c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M118 158 L121 170 L125 160 Z M131 160 L135 170 L138 158 Z" fill="#f4eee8"/>
+  <path d="M60 256 C70 200 96 190 128 196 C160 190 186 200 196 256 Z" fill="#240d18"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Vampira carmesim">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1030"/><stop offset="1" stop-color="#0d050f"/></linearGradient></defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <circle cx="186" cy="68" r="44" fill="#e8ddd0" opacity="0.9"/>
+  <circle cx="200" cy="58" r="40" fill="#2a1030" opacity="0.35"/>
+  <path d="M66 256 C34 140 56 36 128 34 C200 36 222 140 190 256 Z" fill="#0b0409"/>
+  <rect x="113" y="150" width="30" height="40" fill="#d6cabe"/>
+  <ellipse cx="128" cy="116" rx="42" ry="54" fill="#ece1d4"/>
+  <path d="M84 108 C84 56 172 56 172 108 C162 88 144 80 128 90 C112 80 94 88 84 108 Z" fill="#0b0409"/>
+  <path d="M96 112 Q108 104 120 112 Q108 118 96 112 Z M136 112 Q148 104 160 112 Q148 118 136 112 Z" fill="#14070f"/>
+  <circle cx="108" cy="111" r="3.4" fill="#d3203f"/><circle cx="148" cy="111" r="3.4" fill="#d3203f"/>
+  <path d="M94 104 Q108 96 122 104 M134 104 Q148 96 162 104" stroke="#0b0409" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M110 144 Q119 138 128 142 Q137 138 146 144 Q128 156 110 144 Z" fill="#a0132e"/>
+  <path d="M117 147 L120 158 L124 148 Z M132 148 L136 158 L139 147 Z" fill="#fff"/>
+  <path d="M60 256 C80 214 104 200 128 204 C152 200 176 214 196 256 Z" fill="#5e1328"/>
+</svg>

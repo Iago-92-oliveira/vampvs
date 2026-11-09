@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Vampiro nobre">
+  <defs><radialGradient id="g" cx="50%" cy="30%" r="80%"><stop offset="0" stop-color="#5e1328"/><stop offset="1" stop-color="#12060c"/></radialGradient></defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <path d="M10 256 L58 168 L128 198 L198 168 L246 256 Z" fill="#09040700"/>
+  <path d="M10 256 L58 168 L128 198 L198 168 L246 256 Z" fill="#0a0509"/>
+  <path d="M58 168 L104 146 L128 204 Z M198 168 L152 146 L128 204 Z" fill="#8f1730"/>
+  <rect x="112" y="138" width="32" height="44" fill="#d3c7bd"/>
+  <ellipse cx="128" cy="104" rx="46" ry="58" fill="#e9ded1"/>
+  <path d="M78 98 C70 36 186 36 178 98 C168 72 148 62 128 62 C108 62 88 72 78 98 Z" fill="#0d090b"/>
+  <path d="M96 96 L119 101 M160 96 L137 101" stroke="#0d090b" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="108" cy="110" rx="10" ry="5.5" fill="#c21f3a"/><ellipse cx="148" cy="110" rx="10" ry="5.5" fill="#c21f3a"/>
+  <circle cx="108" cy="110" r="2.2" fill="#000"/><circle cx="148" cy="110" r="2.2" fill="#000"/>
+  <path d="M120 120 L128 134 L136 120" stroke="#b9aa9d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M108 142 Q128 152 148 142" stroke="#7a1022" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M115 145 L119 160 L124 148 Z M132 148 L137 160 L141 145 Z" fill="#fff"/>
+</svg>

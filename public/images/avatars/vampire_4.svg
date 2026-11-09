@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Senhor dos morcegos">
+  <defs><radialGradient id="g" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#4a1020"/><stop offset="1" stop-color="#0b0408"/></radialGradient></defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <circle cx="128" cy="120" r="84" fill="#d8c7b8" opacity="0.92"/>
+  <path d="M128 92 L112 70 L118 100 C96 84 60 78 14 98 C34 104 44 118 40 138 C54 126 70 128 82 142 C90 128 106 126 116 136 C120 148 124 156 128 164 C132 156 136 148 140 136 C150 126 166 128 174 142 C186 128 202 126 216 138 C212 118 222 104 242 98 C196 78 160 84 138 100 L144 70 Z" fill="#0a0408"/>
+  <ellipse cx="128" cy="124" rx="19" ry="23" fill="#0a0408"/>
+  <circle cx="120" cy="118" r="4" fill="#ff3b5c"/><circle cx="136" cy="118" r="4" fill="#ff3b5c"/>
+  <path d="M121 134 L123 142 L126 135 Z M130 135 L133 142 L135 134 Z" fill="#fff"/>
+</svg>

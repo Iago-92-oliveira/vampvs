@@ -6,6 +6,7 @@ import { criarUsuariosDeTeste } from './db/seedDev';
 import { GameError } from './errors';
 import { arenaRoutes } from './routes/arenaRoutes';
 import { authRoutes } from './routes/authRoutes';
+import { avatarRoutes } from './routes/avatarRoutes';
 import { characterRoutes } from './routes/characterRoutes';
 import { factionRoutes } from './routes/factionRoutes';
 import { hideoutRoutes } from './routes/hideoutRoutes';
@@ -60,6 +61,7 @@ app.use('/api', (req, _res, next) => {
 app.use('/static', express.static(config.publicDir));
 app.use('/api/auth', authRoutes);
 app.use('/api/faction', factionRoutes);
+app.use('/api/avatar', avatarRoutes);
 app.use('/api/character', characterRoutes);
 app.use('/api/inventory', inventoryRoutes);
 app.use('/api/shop', shopRoutes);

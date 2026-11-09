@@ -6,6 +6,10 @@ function renderPerfil(p) {
   document.body.dataset.faccao = personagem.faccao;
   $('btn-ouro-dev').hidden = !p.modoDev;
   $('nome').textContent = personagem.nome;
+  const temAvatar = !!personagem.avatar; // a URL vem do catálogo do servidor
+  $('avatar').src = personagem.avatar || '/static/images/avatars/default.svg';
+  $('avatar').alt = temAvatar ? `Avatar de ${personagem.nome}` : 'Sem avatar';
+  $('link-avatar').textContent = temAvatar ? 'Trocar avatar' : 'Escolher avatar';
   $('faccao').textContent = personagem.faccao === 'vampiro' ? 'Vampiro' : 'Lobisomem';
   $('nivel').textContent = personagem.nivel;
   $('xp').textContent = `${personagem.xp} / ${personagem.xpProximoNivel}`;

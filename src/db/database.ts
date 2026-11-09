@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS personagens (
   pa_atualizado_em INTEGER NOT NULL DEFAULT 0,
   pontos_livres    INTEGER NOT NULL DEFAULT 0  CHECK (pontos_livres >= 0),
   honra            INTEGER NOT NULL DEFAULT 0  CHECK (honra >= 0),
+  avatar           TEXT,                       -- id do catálogo (avatarCatalog.ts); NULL = não escolhido
   criado_em   TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
@@ -228,6 +229,7 @@ function migrarColunas(): void {
     ['personagens', 'pa_atualizado_em', 'INTEGER NOT NULL DEFAULT 0'],
     ['personagens', 'pontos_livres', 'INTEGER NOT NULL DEFAULT 0 CHECK (pontos_livres >= 0)'],
     ['personagens', 'honra', 'INTEGER NOT NULL DEFAULT 0 CHECK (honra >= 0)'],
+    ['personagens', 'avatar', 'TEXT'],
     ['inventario', 'preco_pago', 'INTEGER NOT NULL DEFAULT 0 CHECK (preco_pago >= 0)'],
   ];
   for (const [tabela, coluna, definicao] of novas) {

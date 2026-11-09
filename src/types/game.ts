@@ -30,6 +30,7 @@ export interface Personagem {
   pa_atualizado_em: number; // epoch ms do último "tick" de regeneração
   pontos_livres: number; // pontos de atributo ganhos ao subir de nível
   honra: number; // pontuação do ranking PvP
+  avatar: string | null; // id do avatar (ex.: 'vampire_1'); null = ainda não escolheu
 }
 
 export interface Monstro {

@@ -148,3 +148,14 @@ export function debitarOuro(personagemId: number, valor: number): boolean {
 export function creditarOuro(personagemId: number, valor: number): void {
   db.prepare('UPDATE personagens SET ouro = ouro + ? WHERE id = ?').run(valor, personagemId);
 }
+
+/**
+ * Grava o avatar. O `faccao = ?` no WHERE é uma segunda barreira, no próprio UPDATE:
+ * só grava se o avatar for da mesma facção que está gravada no personagem.
+ */
+export function definirAvatar(personagemId: number, avatarId: string, faccaoDoAvatar: Faccao): boolean {
+  const r = db
+    .prepare('UPDATE personagens SET avatar = ? WHERE id = ? AND faccao = ?')
+    .run(avatarId, personagemId, faccaoDoAvatar);
+  return r.changes === 1;
+}

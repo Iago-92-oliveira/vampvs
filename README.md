@@ -117,6 +117,22 @@ Tela `/hideout` (menu "Esconderijo"). Cinco construções, todas começam no ní
   recebem o registro (a mina começa a produzir a partir desse momento).
 - Os números ficam em `src/services/hideoutRules.ts`.
 
+## Avatares
+
+Cada facção tem 4 avatares quadrados (1:1) em `public/images/avatars/` (`vampire_1..4`, `werewolf_1..4`, mais
+`default.svg` para quem ainda não escolheu). São placeholders em SVG; para usar arte própria, troque os arquivos
+mantendo os nomes (se forem PNG, ajuste `extensao` em `src/services/avatarCatalog.ts`).
+
+- **Fluxo:** cadastro, facção, **escolha de avatar**, perfil. Quem já tinha conta e não tem avatar é levado à escolha
+  uma vez ao entrar. No perfil, o link "Trocar avatar" abre `/avatar` a qualquer momento.
+- **Banco:** `personagens.avatar` guarda só o id (ex.: `vampire_2`); NULL = não escolhido. A coluna é adicionada
+  sozinha em bancos existentes.
+- **Segurança (tudo no servidor):** o cliente envia apenas `{ "avatarId": "vampire_2" }`. O servidor lê a facção
+  do banco, aceita só ids exatos do catálogo, recusa avatar de outra facção (403) ou id inexistente (400), e o
+  `UPDATE` ainda confere a facção como segunda barreira. A lista enviada ao navegador só traz os avatares da facção
+  do jogador. A URL da imagem sai sempre do catálogo, nunca do cliente.
+- Contas de teste novas já nascem com avatar (teste1..3 vampire_1..3, teste4..6 werewolf_1..3).
+
 ## Estrutura
 
 ```
@@ -129,7 +145,7 @@ src/
   controllers/         HTTP <-> services
   routes/              rotas da API e das páginas
   middleware/auth.ts
-views/                 login, faction, profile, village, hideout, hunt, arena (protegidas por rota)
+views/                 login, faction, avatar, profile, village, hideout, hunt, arena (protegidas por rota)
 public/                css/js estáticos (servidos em /static)
 ```
 
@@ -146,6 +162,8 @@ public/                css/js estáticos (servidos em /static)
 | GET    | /api/inventory                | itens do jogador                   |
 | POST   | /api/inventory/:id/equip      | equipa (troca o item do slot)      |
 | POST   | /api/inventory/:id/unequip    | desequipa                          |
+| GET    | /api/avatar                   | avatares da sua facção + atual     |
+| POST   | /api/avatar                   | `{ "avatarId": "vampire_2" }`      |
 | POST   | /api/inventory/:id/use        | usa uma poção                      |
 | POST   | /api/inventory/:id/sell       | venda rápida (50% do preço pago)   |
 | GET    | /api/shop                     | catálogo com bloqueios (nível/ouro)|

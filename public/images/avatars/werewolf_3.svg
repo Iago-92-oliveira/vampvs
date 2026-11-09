@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Garras afiadas">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="75%"><stop offset="0" stop-color="#3b1f10"/><stop offset="1" stop-color="#0b0605"/></radialGradient>
+    <radialGradient id="e" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb52e" stop-opacity="1"/><stop offset="1" stop-color="#ffb52e" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <ellipse cx="96" cy="76" rx="22" ry="12" fill="url(#e)"/><ellipse cx="160" cy="76" rx="22" ry="12" fill="url(#e)"/>
+  <path d="M82 76 L110 72 L98 82 Z M174 76 L146 72 L158 82 Z" fill="#ffc94d"/>
+  <ellipse cx="98" cy="76" rx="3" ry="8" fill="#1a0e06"/><ellipse cx="158" cy="76" rx="3" ry="8" fill="#1a0e06"/>
+  <path d="M60 120 C80 110 110 140 126 232 C104 160 86 138 60 120 Z" fill="#d9a441"/>
+  <path d="M112 112 C132 106 162 142 176 244 C156 168 138 140 112 112 Z" fill="#e8b84d"/>
+  <path d="M166 120 C186 116 210 150 218 232 C202 170 188 146 166 120 Z" fill="#d9a441"/>
+  <path d="M60 120 C80 110 110 140 126 232" stroke="#fff3c9" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M112 112 C132 106 162 142 176 244" stroke="#fff3c9" stroke-width="2" fill="none" opacity="0.6"/>
+</svg>

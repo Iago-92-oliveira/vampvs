@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Sem avatar">
+  <rect width="256" height="256" fill="#1c1119"/>
+  <circle cx="128" cy="100" r="44" fill="#3b2a36"/>
+  <path d="M40 256 C44 188 84 160 128 160 C172 160 212 188 216 256 Z" fill="#3b2a36"/>
+  <path d="M120 84 C120 70 140 70 140 84 C140 94 128 96 128 108 M128 120 L128 124" stroke="#a99b9b" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

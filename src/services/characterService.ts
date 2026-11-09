@@ -6,6 +6,7 @@ import * as efeitoModel from '../models/efeitoModel';
 import * as inventoryModel from '../models/inventoryModel';
 import * as itemModel from '../models/itemModel';
 import { ATRIBUTOS, AtributoNome, FACCOES, Faccao, Personagem } from '../types/game';
+import { urlDoAvatar } from './avatarCatalog';
 import { statusPAde } from './paService';
 import { statsAtuais } from './statsService';
 import {
@@ -31,6 +32,7 @@ export function montarPerfil(usuarioId: number) {
     personagem: {
       nome: p.nome,
       faccao: p.faccao,
+      avatar: urlDoAvatar(p.avatar),
       nivel: p.nivel,
       xp: p.xp,
       xpProximoNivel: xpParaProximoNivel(p.nivel),

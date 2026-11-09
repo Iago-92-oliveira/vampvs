@@ -225,3 +225,22 @@ dl.dados dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; 
 .mina-info .barra { height: 10px; margin: 0.4rem 0; }
 .btn-coletar { padding: 1rem 1.8rem; font-size: 1.15rem; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
 .nivel-tag { margin-left: 0.6rem; font-size: 0.85rem; font-weight: 400; color: var(--osso-fraco); }
+
+/* ===== Avatares ===== */
+.pagina-estreita { max-width: 760px; }
+.link-discreto { color: var(--osso-fraco); font-size: 0.9rem; }
+.link-discreto:hover { color: var(--accent); }
+.avatar-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
+.avatar-opcao {
+  display: flex; flex-direction: column; gap: 0.5rem; padding: 0.5rem;
+  background: var(--noite); border: 2px solid var(--linha); border-radius: 10px;
+  color: var(--osso); font: inherit; text-align: center; cursor: pointer;
+}
+.avatar-opcao img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; }
+.avatar-opcao:hover { border-color: var(--osso-fraco); }
+.avatar-opcao.selecionado { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
+.avatar-nome { font-size: 0.95rem; }
+.avatar-acoes { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+
+.topo-identidade { display: flex; align-items: center; gap: 1rem; }
+.avatar-perfil { width: 88px; height: 88px; border-radius: 10px; border: 2px solid var(--accent); object-fit: cover; background: var(--noite-2); }

@@ -38,6 +38,8 @@ export function criarUsuariosDeTeste(): void {
         const personagemId = characterModel.create(usuarioId, `personagem${i}`);
         hideoutModel.criar(personagemId, Date.now());
         characterService.escolherFaccao(usuarioId, faccao); // aplica bônus e entrega os itens iniciais
+        const avatarId = faccao === 'vampiro' ? `vampire_${i}` : `werewolf_${i - QUANTIDADE / 2}`;
+        characterModel.definirAvatar(personagemId, avatarId, faccao);
       })();
       criados.push(`teste${i} (${faccao})`);
     } catch (err) {

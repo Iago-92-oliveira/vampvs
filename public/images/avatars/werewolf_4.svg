@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Lobo cicatrizado">
+  <defs><radialGradient id="g" cx="50%" cy="35%" r="80%"><stop offset="0" stop-color="#2c3946"/><stop offset="1" stop-color="#0a0d12"/></radialGradient></defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <path d="M62 34 L100 94 L54 112 Z M194 34 L156 94 L202 112 Z" fill="#3c4652"/>
+  <path d="M70 60 L92 94 L68 102 Z M186 60 L164 94 L188 102 Z" fill="#6f7b88"/>
+  <path d="M44 122 C44 72 212 72 212 122 C216 172 182 226 128 240 C74 226 40 172 44 122 Z" fill="#59636f"/>
+  <path d="M94 150 C98 122 158 122 162 150 C166 190 148 224 128 234 C108 224 90 190 94 150 Z" fill="#aab3bd"/>
+  <path d="M112 166 L144 166 L136 184 L120 184 Z" fill="#12171d"/>
+  <path d="M78 114 L116 126 L82 136 Z" fill="#9fd4e8"/>
+  <path d="M176 118 L138 126 L172 130" stroke="#12171d" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="104" cy="125" r="3.2" fill="#000"/>
+  <path d="M164 84 L186 150" stroke="#c9d1d9" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  <path d="M160 96 L176 90 M168 114 L184 108 M176 132 L190 126" stroke="#c9d1d9" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M110 198 Q128 210 146 198" stroke="#12171d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M114 200 L118 216 L124 204 Z M132 204 L138 216 L142 200 Z" fill="#f2f4f6"/>
+</svg>

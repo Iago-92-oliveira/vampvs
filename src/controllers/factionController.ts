@@ -18,5 +18,5 @@ export function opcoes(_req: Request, res: Response) {
 
 export function escolher(req: Request, res: Response) {
   characterService.escolherFaccao(req.session.userId!, req.body?.faccao);
-  res.json({ ok: true, redirect: '/profile' });
+  res.json({ ok: true, redirect: '/avatar' }); // primeiro acesso: escolher o avatar
 }

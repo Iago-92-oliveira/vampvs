@@ -6,6 +6,7 @@ import { GameError } from '../errors';
 import * as characterModel from '../models/characterModel';
 import * as hideoutModel from '../models/hideoutModel';
 import * as userModel from '../models/userModel';
+import { destinoInicial } from '../services/flow';
 
 const USERNAME_RE = /^[a-zA-Z0-9_]{3,20}$/;
 const NOME_RE = /^[\p{L}0-9_ ]{3,24}$/u;
@@ -24,8 +25,7 @@ function iniciarSessao(req: Request, userId: number): Promise<void> {
 }
 
 function destinoPosLogin(userId: number): string {
-  const p = characterModel.findByUsuarioId(userId);
-  return p?.faccao ? '/profile' : '/faction';
+  return destinoInicial(userId);
 }
 
 export async function registrar(req: Request, res: Response) {

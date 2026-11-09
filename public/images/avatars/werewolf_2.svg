@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Uivo da lua cheia">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2230"/><stop offset="1" stop-color="#07090e"/></linearGradient>
+    <radialGradient id="m" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff2cf"/><stop offset="1" stop-color="#e3b865"/></radialGradient>
+  </defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <circle cx="128" cy="112" r="92" fill="url(#m)"/>
+  <circle cx="92" cy="80" r="15" fill="#d6a850" opacity="0.45"/><circle cx="164" cy="132" r="11" fill="#d6a850" opacity="0.4"/><circle cx="150" cy="56" r="8" fill="#d6a850" opacity="0.4"/>
+  <path d="M40 256 L40 226 C70 212 96 220 112 244 L118 256 Z M216 256 L216 226 C186 212 160 220 144 244 L138 256 Z" fill="#05060a"/>
+  <path d="M70 70 L98 118 L64 132 Z M186 70 L158 118 L192 132 Z" fill="#05060a"/>
+  <path d="M60 140 C58 100 198 100 196 140 C200 184 170 228 128 244 C86 228 56 184 60 140 Z" fill="#05060a"/>
+  <path d="M98 150 L116 142 L110 154 Z M158 150 L140 142 L146 154 Z" fill="#ffd45e"/>
+  <path d="M118 188 Q128 196 138 188" stroke="#1e2430" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M117 190 L120 202 L124 192 Z M132 192 L136 202 L139 190 Z" fill="#e9e4da"/>
+</svg>
